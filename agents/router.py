@@ -20,8 +20,7 @@ AVAILABLE DATA:
 
 Output the COMPLETE entity set for this query. 
 Read the conversation naturally. The user's query refers to the most recent context unless they explicitly change topic.
-Time: "this year" = {current_year}, "last year" = {last_year}, "latest" = most recent in data. No time mentioned = leave empty.
-
+Time: "this year" = {current_year}, "latest" = most recent in data. No time mentioned = leave empty.
 Detail: "total"/"sum"/"overall" = summary. 
 "breakdown"/"by category"/"per tenant"/"split by"/"quarterly"/"monthly" = detailed.
 
@@ -58,7 +57,6 @@ def router_node(state: dict) -> dict:
                 history=format_history(state),
                 today=today.isoformat(),
                 current_year=str(today.year),
-                last_year=str(today.year - 1),
             )),
             HumanMessage(content=state["query"]),
         ], agent_name="Router")
