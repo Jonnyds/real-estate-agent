@@ -21,6 +21,8 @@ AVAILABLE DATA:
 Output the COMPLETE entity set for this query. 
 Read the conversation naturally. The user's query refers to the most recent context unless they explicitly change topic.
 Time: "this year" = {current_year}, "latest" = most recent in data. No time mentioned = leave empty.
+ALWAYS use the actual calendar year even if it's not in the available data.
+Do NOT substitute with the latest available year, The Retriever will handle the error.
 Detail: "total"/"sum"/"overall" = summary. 
 "breakdown"/"by category"/"per tenant"/"split by"/"quarterly"/"monthly" = detailed.
 
