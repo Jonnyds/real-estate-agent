@@ -74,7 +74,7 @@ The Validator is conservative - it passes through if in doubt. Only fails valida
 
 ### Responder
 
-Takes the computed results, the scope, and the data summary, and formats a readable answer. It only mentions dimensions that appear in the scope - so "sum all expenses" without a building filter produces "Total expenses are EUR 1,354,321.02" without listing every building. For factual questions like "how many tenants does Building 120 have?", it reads the count from the data summary rather than the financial results.
+Takes the computed results, the scope, and the data summary, and formats a readable answer. It only mentions dimensions that appear in the scope - so "sum all expenses" without a building filter produces "Total expenses are EUR 1,354,321.02" without listing every building. For factual questions like "how many tenants does Building 120 have?", it reads the count from the data summary rather than the financial results. The ledger descriptions are in Dutch which suggests EUR as currency.
 
 ### Memory
 
