@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-st.set_page_config(page_title="RE Asset Manager", page_icon="🏢")
-st.title("🏢 Real Estate Asset Manager")
-st.caption("Multi-agent system powered by LangGraph + Azure OpenAI (GPT-4.1 mini)")
+st.set_page_config(page_title="Real Estate Assistant", page_icon="🏢")
+st.title("🏢 Real Estate Assistant")
+
 
 from graph import run_query
 
